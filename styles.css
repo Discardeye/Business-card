@@ -1,0 +1,83 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    border: 2px solid #118ab2;
+    border-style: outset;
+    border-radius: 10px;
+}
+
+.card {
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #cad2c5;
+    color: #2f3e46;
+    border: 7px solid #118ab2;
+    border-style: outset;
+    border-radius: 10px;
+    text-shadow: 2px 2px 2px #118ab2;
+    animation-name: moveBox;
+    animation-duration: 4s;
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+    #7E9096
+    #113A55
+    #27473D
+     */
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+.box:hover{
+    filter: drop-shadow(10px 15px 5px #118ab2);
+}
+@keyframes moveBox{
+    0%,100%{
+       transform: translate(0,0); 
+    }
+    20%{
+        transform: translate(-125px,0);
+        }
+    40%{
+        transform: translate(0,-125px);
+           }
+    60%{
+        transform: translate(125px,0);
+            }
+    80%{
+        transform: translate(0,125px);
+    }        
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
